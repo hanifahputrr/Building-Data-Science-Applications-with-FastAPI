@@ -7,13 +7,15 @@ This chapter covers the foundational setup needed to work with Python and FastAP
 **Step 1**
 1. Create python virtual environment:
 to isolate project dependencies, avoiding conflicts across projects
-``` python -m venv venv ```
+  ```
+    python -m venv venv
+  ```
 3. Activate the virtual environment:
   source venv/bin/activatee
 4. Installing FastAPI and uvicorn
   pip install fastapi "uvicorn[standard]"
 
-#**Step 2: simple requests on a dummy API**
+**Step 2: simple requests on a dummy API**
 
 ---
 **1. Installing the HTTPie command-line utility:**
@@ -29,7 +31,6 @@ to isolate project dependencies, avoiding conflicts across projects
     
     ```json
     json
-    Copy code
     [
         {
             "id": "1",
@@ -42,7 +43,6 @@ to isolate project dependencies, avoiding conflicts across projects
 
 **Result**: Successfully fetched data from the dummy API using the **GET** method. HTTPie displayed a clean, formatted JSON response with headers.
 
----
 
 **3. Perform a POST Request**
     http -v POST https://603cca51f4333a0017b68509.mockapi.io/todos text="My new task"
@@ -52,8 +52,6 @@ to isolate project dependencies, avoiding conflicts across projects
 - Output:
     
     ```json
-    json
-    Copy code
     {
         "id": "2",
         "text": "My new task"
@@ -76,8 +74,6 @@ to isolate project dependencies, avoiding conflicts across projects
 - Output received:
     
     ```json
-    json
-    Copy code
     [
         {
             "id": "1",
@@ -94,9 +90,9 @@ to isolate project dependencies, avoiding conflicts across projects
 
 **Result**: Successfully sent a **GET** request with a custom header. The API responded with data, and the headers were confirmed in the response.
 
----
 
 ### **Summary**
+---
 
 - All steps were executed successfully using HTTPie in VS Code. The API endpoints responded correctly to **GET** and **POST** requests.
 - HTTPie proved to be a simple and efficient tool for API testing with formatted output and debugging features.
