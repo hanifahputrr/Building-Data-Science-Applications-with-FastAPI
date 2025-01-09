@@ -65,7 +65,6 @@ to isolate project dependencies, avoiding conflicts across projects
 
 **Result**: Successfully created a new task in the dummy API using the **POST** method. The `-v` option displayed both the request and response for debugging.
 
----
 
 4. Add Custom Headers
    ```
