@@ -1,8 +1,8 @@
-##Building Data Science Applications with FastAPI
+Building Data Science Applications with FastAPI
 This chapter covers the foundational setup needed to work with Python and FastAPI efficiently, ensuring a robust and conflict-free development environment. The key focus is on configuring tools, managing dependencies, and preparing the system for API development.
 ---
 
-## **Python Development Environment Setup**
+**Python Development Environment Setup**
 #**Step 1**
 1. Create python virtual environment:
 //to isolate project dependencies, avoiding conflicts across projects
