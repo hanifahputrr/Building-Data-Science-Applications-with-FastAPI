@@ -1,15 +1,16 @@
 Building Data Science Applications with FastAPI
-This chapter covers the foundational setup needed to work with Python and FastAPI efficiently, ensuring a robust and conflict-free development environment. The key focus is on configuring tools, managing dependencies, and preparing the system for API development.
 ---
+This chapter covers the foundational setup needed to work with Python and FastAPI efficiently, ensuring a robust and conflict-free development environment. The key focus is on configuring tools, managing dependencies, and preparing the system for API development.
 
 **Python Development Environment Setup**
-#**Step 1**
+---
+**Step 1**
 1. Create python virtual environment:
-//to isolate project dependencies, avoiding conflicts across projects
-  python -m venv venv
-2. Activate the virtual environment:
+to isolate project dependencies, avoiding conflicts across projects
+``` python -m venv venv ```
+3. Activate the virtual environment:
   source venv/bin/activatee
-3. Installing FastAPI and uvicorn
+4. Installing FastAPI and uvicorn
   pip install fastapi "uvicorn[standard]"
 
 #**Step 2: simple requests on a dummy API**
