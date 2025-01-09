@@ -10,27 +10,29 @@ to isolate project dependencies, avoiding conflicts across projects
   ```
     python -m venv venv
   ```
-3. Activate the virtual environment:
-  source venv/bin/activatee
-4. Installing FastAPI and uvicorn
-  pip install fastapi "uvicorn[standard]"
+2. Activate the virtual environment:
+   ```
+     source venv/bin/activatee
+   ```
+3. Installing FastAPI and uvicorn
+   ```
+   pip install fastapi "uvicorn[standard]"
+   ```
 
 **Step 2: simple requests on a dummy API**
 
----
-**1. Installing the HTTPie command-line utility:**
-  pip install httpie
+1. Installing the HTTPie command-line utility:
+   ```
+   pip install httpie
+   ```
 
----
-
-**2. Perform a GET Request**
+2. Perform a GET Request
+   ```
     http GET https://603cca51f4333a0017b68509.mockapi.io/todos
-    
-    ```
+   ```
 - Output:
     
-    ```json
-    json
+    ```
     [
         {
             "id": "1",
@@ -44,14 +46,15 @@ to isolate project dependencies, avoiding conflicts across projects
 **Result**: Successfully fetched data from the dummy API using the **GET** method. HTTPie displayed a clean, formatted JSON response with headers.
 
 
-**3. Perform a POST Request**
+3. Perform a POST Request
+   ```
     http -v POST https://603cca51f4333a0017b68509.mockapi.io/todos text="My new task"
     
     ```
     
 - Output:
     
-    ```json
+    ```
     {
         "id": "2",
         "text": "My new task"
@@ -64,16 +67,14 @@ to isolate project dependencies, avoiding conflicts across projects
 
 ---
 
-**4. Add Custom Headers**
-
-- Command:
+4. Add Custom Headers
+   ```
     http -v GET https://603cca51f4333a0017b68509.mockapi.io/todos "My-Header: My-Header-Value"
-    
-    ```
+   ```
     
 - Output received:
     
-    ```json
+    ```
     [
         {
             "id": "1",
